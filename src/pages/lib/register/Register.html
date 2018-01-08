@@ -1,0 +1,31 @@
+<div class="modal-container active">
+    <div class="login-modal">
+      <form  @submit.prevent="register" class="form">
+        <md-field>
+          <label>First name</label>
+          <md-input v-model="name.first"></md-input>
+        </md-field>
+
+        <md-field>
+          <label>Last name</label>
+          <md-input v-model="name.last"></md-input>
+        </md-field>
+
+        <md-field>
+          <label>Email</label>
+          <md-input v-model="email" type="email" autocomplete="email"></md-input>
+        </md-field>
+
+        <md-field>
+          <label>Password</label>
+          <md-input v-model="password" type="password"></md-input>
+        </md-field>
+
+        <md-button type="submit"
+          class="md-raised md-primary modal-button"
+          autofocus>
+          Register
+        </md-button>
+      </form>
+    </div>
+</div>

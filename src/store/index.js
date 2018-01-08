@@ -7,7 +7,8 @@ import * as modules from './modules'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+export default () => new Vuex.Store({
+  strict: true,
   modules,
   plugins: [
     createPersistedState({

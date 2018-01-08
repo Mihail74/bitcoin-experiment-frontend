@@ -5,6 +5,9 @@
 </template>
 
 <script>
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
+
 export default {
   name: 'app'
 }
@@ -18,5 +21,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#app * {
+  box-sizing: border-box;
 }
 </style>

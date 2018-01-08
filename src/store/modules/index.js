@@ -1,1 +1,1 @@
-// export { default as module } from './lib/module.js'
+export { default as auth } from './lib/auth.js'
